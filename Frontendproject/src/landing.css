@@ -1,0 +1,159 @@
+/* ===============================
+   Global Layout
+=============================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom, #eef4ff, #ffffff);
+  color: #1b1b1b;
+}
+
+.uiA-container {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.uiA-header {
+  padding: 60px 20px 20px;
+}
+
+.uiA-icon {
+  font-size: 48px;
+}
+
+.uiA-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.uiA-subtitle {
+  font-size: 17px;
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 25px auto;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.uiA-btn {
+  background: #3f66ff;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.uiA-btn:hover {
+  background: #2f57e5;
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   FEATURE SECTION
+=============================== */
+.uiA-feature-section {
+  max-width: 1150px;
+  margin: 40px auto 30px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.uiA-feature-card {
+  background: #ffffff;
+  width: 330px;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+  text-align: left;
+}
+
+.uiA-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.09);
+}
+
+.uiA-feature-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.uiA-feature-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.uiA-feature-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   HOW IT WORKS SECTION
+=============================== */
+.uiA-how-section {
+  margin-top: 60px;
+}
+
+.uiA-how-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.uiA-step-card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: 0.25s ease;
+}
+
+.uiA-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+}
+
+.uiA-step-number {
+  font-size: 22px;
+  background: #e6ecff;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #3f66ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .uiA-feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .uiA-feature-card {
+    width: 90%;
+  }
+
+  .uiA-step-card {
+    width: 90%;
+  }
+}
